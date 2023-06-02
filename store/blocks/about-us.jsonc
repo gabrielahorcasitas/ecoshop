@@ -1,0 +1,37 @@
+{
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us"]
+  },
+  "flex-layout.row#about-us": {
+    "children": [
+      "image#about-us",
+      "flex-layout.col#text-about-us"
+    ]
+  },
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#about-title",
+      "rich-text#about-content"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-title": {
+    "props": {
+        "text": "# Acerca de nosotros"
+    }
+  },
+  "rich-text#about-content": {
+    "props": {
+      "text":
+        " ### Somos una tienda dedicada a la venta de productos amigables con el ambiente."
+    }
+  },
+  "image#about-us": {
+    "props": {
+      "src": "https://burst.shopifycdn.com/photos/photo-of-a-green-forest-and-a-mossy-river.jpg?width=925&format=pjpg&exif=0&iptc=0",
+      "maxHeight": "600px"
+    }
+  }
+}

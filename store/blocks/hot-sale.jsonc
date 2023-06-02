@@ -1,0 +1,29 @@
+{
+    "store.custom#hot-sale":{
+        "blocks": [
+            "image#landingbanner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "image#landingbanner": {
+        "props": {
+            "src": "https://t3.ftcdn.net/jpg/00/74/80/30/360_F_74803077_tAM730fGIeVYoFTDLTgt8AIMXZCqh1rQ.jpg",
+            "minWidth": "100%"
+        }
+    },
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "137",
+                "mapField": "productClusterIds",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop"
+        ]
+    }
+}

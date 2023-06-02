@@ -1,0 +1,214 @@
+{
+  "store.product": {
+    "children": [
+      "condition-layout.product",
+      "breadcrumb",
+      "flex-layout.row#main-test"
+    ]
+  },
+  "condition-layout.product": {
+    "children": [
+      "condition.product#desodorante",
+      "condition.product#detergente"
+    ]
+  },
+  "condition.product#desodorante": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "12"
+        }
+      ]
+    },
+    "children": ["image#desodorante-banner"]
+  },
+  "image#desodorante-banner": {
+    "props": {
+    "src": "https://allnaturalsoap.co.uk/wp-content/uploads/2015/05/Natural-Soaps_ALL-NATURAL-SOAP-Co.jpg",
+    "width": "100%",
+    "height": "200px",
+    "blockClass": "cover"
+    }
+  },
+  "condition.product#detergente" : {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "17"
+        }
+      ]
+    },
+    "children": ["tab-layout#detergente-tab"]
+  },
+  "tab-layout#detergente-tab":{
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2"
+      ]
+  },
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2"
+      ]
+  },
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "masDetergentes",
+      "label": "Más Detergentes",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "otrosJabones",
+      "label": "Otros Jabones"
+    }
+  },
+  "tab-content.item#1": {
+    "children": [
+      "slider-layout#product-detergentes"
+    ],
+    "props": {
+      "tabId": "masDetergentes"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "slider-layout#product-jabones"
+    ],
+    "props": {
+      "tabId": "otrosJabones"
+    }
+  },
+  "slider-layout#product-detergentes":{
+    "children": [
+      "image#lavavajillas", "image#detergente-trastes", "image#detergente-ropa"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "slider-layout#product-jabones":{
+    "children": [
+      "image#jabon-ropa", "image#jabon-corporal"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "image#lavavajillas":{
+    "props": {
+      "src" :"https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/94c850cf18a547699d9802933be603cc/53e2b8d3729e7976bc691f3b1631251b.jpg",
+      "maxHeight": 100,
+      "link": {
+        "url": "/pastilla-lavavajilla/p"
+      }
+  }
+  },
+  "image#detergente-trastes":{
+    "props": {
+      "src" :"https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/20b8155775bd440c80400f894b0f27d1/fd518dd8073e1c7e3dfa6ccfe8d12271.jpg",
+      "maxHeight": 100,
+      "link": {
+        "url": "/detergente-liquido-trastes/p"
+      }
+  }
+  },
+  "image#jabon-ropa":{
+    "props": {
+      "src" :"https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/a7124c6b881d4b718d04b9438c27c273/067d04a6e8e26a9ed0ef2ff3d0aee32c.jpg",
+      "maxHeight": 100,
+      "link": {
+        "url": "/jabon-ropa/p"
+      }
+  }
+  },
+  "image#detergente-ropa":{
+    "props": {
+      "src" :"https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/c5ff6bba4107442aa5c61fb28dbc2e74/0f4cebb400bd854e336b1dc5b196afec.jpg",
+      "maxHeight": 100,
+      "link": {
+        "url": "/detergente-liquido/p"
+      }
+  }
+  },
+  "image#jabon-corporal":{
+    "props": {
+      "src" :"https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/ef050904-855d-47f7-af59-8429d136b548/56141243cf012b0110d22ee1761c7e2e.jpg",
+      "maxHeight": 100,
+      "link": {
+        "url": "/jabon-corporal/p"
+      }
+  }
+  },
+  "flex-layout.row#main-test": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left-test",
+      "flex-layout.col#right-test"
+    ]
+  },
+  "flex-layout.col#left-test": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right-test": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "product-name",
+      "add-to-list-btn",
+      "link-seller",
+      "product-identifier.product",
+      "product-price",
+      "flex-layout.row#qty-sku",
+      "buy-button",
+      "share#default"
+    ]
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+  "flex-layout.row#qty-sku": {
+    "children": [
+      "sku-selector",
+      "product-quantity",
+      "shipping-simulator"
+    ]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": false
+      }
+    }
+  }
+}

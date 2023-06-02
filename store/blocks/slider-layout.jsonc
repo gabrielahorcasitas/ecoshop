@@ -1,0 +1,88 @@
+
+{
+  "slider-layout#home-marcas": {
+    "children": [
+        "image#brand1", "image#brand2", "image#brand3", "image#brand4", 
+        "image#brand5", "image#brand6", "image#brand7", "image#brand8"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "image#brand1": {
+    "props": {
+        "src" :"https://cdn.shopify.com/s/files/1/0419/2393/6412/files/Sin_titulo-2_Mesa_de_trabajo_1_Mesa_de_trabajo_1.jpg?height=628&pad_color=ffffff&v=1671491910&width=1200",
+        "maxHeight": 50,
+        "link": {
+          "url": "/unda/unda?_q=unda&fuzzy=0&initialMap=ft&initialQuery=unda&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand2": {
+    "props": {
+        "src" :"https://d1yjjnpx0p53s8.cloudfront.net/ecogreen-01.png",
+        "maxHeight": 100,
+        "link": {
+          "url": "/eco-green/eco%20green?_q=eco%20green&fuzzy=0&initialMap=ft&initialQuery=eco%20green&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand3": {
+    "props": {
+        "src" :"https://logos-world.net/wp-content/uploads/2022/04/Tupperware-Logo.png",
+        "maxHeight": 100,
+        "link": {
+          "url": "/tupperware/tupperware?_q=tupperware&fuzzy=0&initialMap=ft&initialQuery=tupperware&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand4": {
+    "props": {
+        "src" :"https://yolob.com.mx/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-29-at-12.03.41.jpeg",
+        "maxHeight": 100,
+        "link": {
+          "url": "/valchini/valchini?_q=valchini&fuzzy=0&initialMap=ft&initialQuery=valchini&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand5": {
+    "props": {
+        "src" :"https://arbolverde.com.mx/wp-content/uploads/2019/04/logo_500x500.png",
+        "maxHeight": 100,
+        "link": {
+          "url": "/arbol-verde/arbol%20verde?_q=arbol%20verde&fuzzy=0&initialMap=ft&initialQuery=arbol%20verde&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand6": {
+    "props": {
+        "src" :"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Frosch_logo.svg/1200px-Frosch_logo.svg.png",
+        "maxHeight": 100,
+        "link": {
+          "url": "/frosch/frosch?_q=frosch&fuzzy=0&initialMap=ft&initialQuery=frosch&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand7": {
+    "props": {
+        "src" :"https://www.amapolabio.com/tienda/img/amapola-biocosmetics-tienda-online-de-cosmetica-natural-logo-1576275211.jpg",
+        "maxHeight": 100,
+        "link": {
+          "url": "/amapola/amapola?_q=amapola&fuzzy=0&initialMap=ft&initialQuery=amapola&map=brand,ft&operator=and"
+        }
+    }
+  },
+  "image#brand8": {
+    "props": {
+        "src" :"https://media.licdn.com/dms/image/C4D0BAQF3G-j2XL4l8g/company-logo_200_200/0/1618390751981?e=2147483647&v=beta&t=pfIgev855QQ37-EhgNBwSJDcTTBA72y6UFvFwXYMqTA",
+        "maxHeight": 100,
+        "link": {
+          "url": "/kutis/kutis?_q=kutis&fuzzy=0&initialMap=ft&initialQuery=kutis&map=brand,ft&operator=and"
+        }
+    }
+  }
+ 
+}

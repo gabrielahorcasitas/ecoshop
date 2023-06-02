@@ -1,0 +1,152 @@
+{
+  "store.home": { 
+    "blocks": [
+      "stack-layout#cta",
+      "flex-layout.row",
+      "list-context.product-list",
+      "responsive-layout.desktop#desktop", 
+      "responsive-layout.mobile#mobile"
+    ]
+  },
+  "stack-layout#cta": {
+    "children": [
+       "image#cta",
+       "link#cta"
+    ]
+  },
+  "image#cta": {
+    "props": {
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 200,
+      "src": "https://t3.ftcdn.net/jpg/00/74/80/30/360_F_74803077_tAM730fGIeVYoFTDLTgt8AIMXZCqh1rQ.jpg"
+    }
+  },
+  "link#cta": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+      "variant": "primary",
+      "size": "large"
+      },
+      "href": "/hot-sale",
+      "label": "Descuentos Hot Sale"
+    }
+  },
+  "flex-layout.row":{
+    "children": [
+      "info-card#ecoshop",
+      "flex-layout.col"
+    ]
+  },
+  "info-card#ecoshop": {
+    "props": {
+      "imageUrl": "https://i.pinimg.com/originals/ff/fe/1e/fffe1e0af978dd6a960807de7cda4a80.png",
+      "isFullModeStyle": true,
+      "headline": "Cocina",
+      "callToActionText": "Explorar",
+      "callToActionUrl": "/cocina",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.col" :{
+    "children": [
+      "info-card#personal-care",
+      "info-card#home-cleaning"
+    ]
+  },
+  "info-card#personal-care": {
+    "props": {
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/UmesX5EPdyW8u8EMC2qnyT-1200-80.png",
+      "isFullModeStyle": true,
+      "headline": "Cuidado Personal",
+      "callToActionText": "Explorar",
+      "callToActionUrl": "/cuidado-personal",
+      "textPosition": "center"
+    }
+  },
+  "info-card#home-cleaning": {
+    "props": {
+      "imageUrl": "https://s3-ap-southeast-1.amazonaws.com/square-rooms/uploads/2021/08/06163500/Style-Living.jpg",
+      "isFullModeStyle": true,
+      "headline": "Limpieza",
+      "callToActionText": "Explorar",
+      "callToActionUrl": "/limpieza--hogar",
+      "textPosition": "center"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf#home-test"],
+    "children": ["slider-layout"]
+  },
+  "slider-layout":{
+    "props": {
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
+    }
+  },
+ "product-summary.shelf#home-test": {
+    "children": [
+      "modal-trigger#quickview",
+      "product-summary-name",
+      "product-selling-price"
+    ]
+  },
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ]
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop",  "slider-layout#home-marcas","image#desktop"]
+  },
+  
+  "responsive-layout.mobile#mobile": {
+    "children": ["rich-text#mobile",  "slider-layout#home-marcas", "image#mobile"]
+  },
+  
+  "rich-text#desktop": {
+    "props": {
+      "text": "# ecoshop \n #### ayudando a conservar la naturaleza",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  
+  "rich-text#mobile": {
+    "props": {
+      "text": "# ecoshop \n ##### conservando la naturaleza",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://wallpaperaccess.com/full/3706646.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "https://ecolana.com.mx/"
+      } ,
+      "alt": "forest image"
+    }
+  },
+  "image#mobile": {
+    "props": {
+      "src": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_12/1941536/170322-honey-bee-mn-1700.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "https://ecolana.com.mx/"
+      } ,
+      "alt": "bee image"
+    }
+  }
+}
